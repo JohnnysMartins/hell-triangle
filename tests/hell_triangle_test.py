@@ -1,10 +1,10 @@
 import unittest
-from bin.hell_triangle import HellTriangle
+from lib.hell_triangle import HellTriangle
 
 
 class HellTriangleTest(unittest.TestCase):
 
-    def test_upper(self):
+    def test_triangle_isNone(self):
         triangle = HellTriangle([])
         self.assertIsNone(triangle.total_sum())
 
