@@ -14,7 +14,7 @@ class HellTriangleTest(unittest.TestCase):
 
     def test_triangle_total_sum(self):
         triangle = HellTriangle([[1], [3, 7]])
-        self.assertEqual(8, triangle.total_sum())
+        self.assertEqual(11, triangle.total_sum())
 
 
 if __name__ == '__main__':
