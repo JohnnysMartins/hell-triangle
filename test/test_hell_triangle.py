@@ -8,9 +8,13 @@ class HellTriangleTest(unittest.TestCase):
         triangle = HellTriangle([])
         self.assertIsNotNone(triangle)
 
-    def test_triangle_isNone(self):
+    def test_triangle_sum_isNone(self):
         triangle = HellTriangle([])
         self.assertIsNone(triangle.total_sum())
+
+    def test_triangle_sum_isNotNone(self):
+        triangle = HellTriangle([0])
+        self.assertIsNotNone(triangle.total_sum())
 
 
 if __name__ == '__main__':
