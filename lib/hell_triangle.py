@@ -14,11 +14,7 @@ class HellTriangle:
         while len(self.__triangle) > 1:
             last_row = self.__triangle.pop()
             last_but_one_row = self.__triangle.pop()
-            for index, number in enumerate(last_but_one_row):
-                if len(last_row) > 1:
-                    value = [max(last_row[index], last_row[index + 1]) + number]
-                else:
-                    value = [last_row[index] + number]
+            value = [max(last_row[index], last_row[index + 1]) + number for index, number in enumerate(last_but_one_row)]
             self.__triangle.append(value)
         self.__value_max = self.__triangle[0][0]
 

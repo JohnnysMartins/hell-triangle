@@ -28,6 +28,21 @@ class HellTriangleTest(unittest.TestCase):
         triangle = HellTriangle([[1], [3, 7], [9, 7, 1]])
         self.assertEqual(15, triangle.total_sum())
 
+    def test_triangle_max_total(self):
+        triangle = HellTriangle([
+            [9],
+            [9, 5],
+            [1, 9, 1],
+            [1, 9, 8, 4],
+            [1, 1, 9, 1, 1],
+            [1, 1, 1, 9, 1, 9],
+            [1, 1, 9, 1, 1, 1, 1],
+            [1, 1, 9, 1, 1, 1, 1, 1],
+            [9, 1, 1, 1, 1, 1, 1, 1, 1],
+            [1, 1, 5, 1, 1, 9, 1, 1, 1, 1]
+        ])
+        self.assertEqual(70, triangle.total_sum())
+
 
 if __name__ == '__main__':
     unittest.main()
