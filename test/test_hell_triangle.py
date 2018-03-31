@@ -30,18 +30,12 @@ class HellTriangleTest(unittest.TestCase):
 
     def test_triangle_max_total(self):
         triangle = HellTriangle([
-            [9],
-            [9, 5],
-            [1, 9, 1],
-            [1, 9, 8, 4],
-            [1, 1, 9, 1, 1],
-            [1, 1, 1, 9, 1, 9],
-            [1, 1, 9, 1, 1, 1, 1],
-            [1, 1, 9, 1, 1, 1, 1, 1],
-            [9, 1, 1, 1, 1, 1, 1, 1, 1],
-            [1, 1, 5, 1, 1, 9, 1, 1, 1, 1]
+            [6],
+            [4, 5],
+            [9, 7, 1],
+            [9, 6, 8, 4]
         ])
-        self.assertEqual(70, triangle.total_sum())
+        self.assertEqual(28, triangle.total_sum())
 
 
 if __name__ == '__main__':
