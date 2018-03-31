@@ -12,6 +12,10 @@ class HellTriangleTest(unittest.TestCase):
         triangle = HellTriangle([])
         self.assertIsNone(triangle.total_sum())
 
+    def test_triangle_is_none(self):
+        triangle = HellTriangle([[1], [2]])
+        self.assertIsNone(triangle.total_sum())
+
     def test_triangle_with_letter(self):
         triangle = HellTriangle([[1], [2, 'b']])
         self.assertIsNone(triangle.total_sum())
