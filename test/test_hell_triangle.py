@@ -30,9 +30,9 @@ class HellTriangleTest(unittest.TestCase):
 
     def test_triangle_max_total(self):
         triangle = HellTriangle([
-            [6],
-            [4, 5],
-            [9, 7, 1],
+               [6],
+              [4, 5],
+             [9, 7, 1],
             [9, 6, 8, 4]
         ])
         self.assertEqual(28, triangle.total_sum())
